@@ -1,49 +1,91 @@
-// ./src/stories/Button.js
-
 import React, { useMemo } from 'react';
+import { twMerge } from 'tailwind-merge';
 
-const getSizeClasses = (size: 'small' | 'large' | 'default') => {
-  switch (size) {
-    case 'small': {
-      return 'px-4 py-2.5';
+// @@@ Button Variants
+const getVariantClass = (variant: ButtonProps['variant']) => {
+  switch (variant) {
+    case 'primary': {
+      return 'bg-primary-500';
     }
-    case 'large': {
-      return 'px-6 py-3';
+    case 'secondary': {
+      return 'bg-mono-700';
+    }
+    case 'tertiary': {
+      return 'bg-mono-50 border-2 border-current text-primary-500 hover:bg-mono-200 hover:opacity-100';
+    }
+    case 'danger': {
+      return 'bg-danger-500';
+    }
+    case 'ghost': {
+      return 'text-primary-500';
     }
     default: {
-      return 'px-5 py-2.5';
+      return '';
     }
   }
 };
 
-const getModeClasses = (isPrimary: boolean) =>
-  isPrimary
-    ? 'text-white bg-pink-600 border-pink-600 dark:bg-pink-700 dark:border-pink-700'
-    : 'text-slate-700 bg-transparent border-slate-700 dark:text-white dark:border-white';
+const getSizeClass = (size: ButtonProps['size']) => {
+  switch (size) {
+    case 'small': {
+      return 'px-4 py-2.5';
+    }
+    case 'medium': {
+      return 'px-6 py-4';
+    }
+    case 'large': {
+      return 'px-8 py-5';
+    }
+    default: {
+      return 'px-6 py-4';
+    }
+  }
+};
+
+const getStateClass = (state: ButtonProps['state']) => {
+  if (state === 'disabled') {
+    return 'disabled:grayscale-[75%] disabled:opacity-80 cursor-not-allowed';
+  }
+  return '';
+};
 
 const BASE_BUTTON_CLASSES =
-  'cursor-pointer rounded-full border-2 font-bold leading-none inline-block';
+  'cursor-pointer border-0 font-normal leading-none inline-block box-border font-bold rounded-md hover:opacity-80 transition ease-in duration-150';
+// @@@
 
-/**
- * Primary UI component for user interaction
- */
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  primary?: boolean;
-  size: 'small' | 'large' | 'default';
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'danger' | 'ghost';
+  size?: 'large' | 'medium' | 'small';
+  state?: 'active' | 'disabled';
+  // icon?: boolean;
   label: string;
 }
 
-export function Button({ primary = false, size = 'default', label, ...props }: ButtonProps) {
+function Button({
+  variant = 'primary',
+  size = 'medium',
+  state = 'active',
+  // icon = 'false',
+  label,
+  ...props
+}: ButtonProps) {
   const computedClasses = useMemo(() => {
-    const modeClass = getModeClasses(primary);
-    const sizeClass = getSizeClasses(size);
+    const variantClass = getVariantClass(variant);
+    const sizeClass = getSizeClass(size);
+    const stateClass = getStateClass(state);
 
-    return [modeClass, sizeClass].join(' ');
-  }, [primary, size]);
+    return [variantClass, sizeClass, stateClass].join(' ');
+  }, [variant, size, state]);
 
   return (
-    <button type="button" className={`${BASE_BUTTON_CLASSES} ${computedClasses}`} {...props}>
+    <button
+      type="button"
+      className={twMerge(BASE_BUTTON_CLASSES, computedClasses)}
+      disabled={state === 'disabled'}
+      {...props}>
       {label}
     </button>
   );
 }
+
+export default React.memo(Button);
