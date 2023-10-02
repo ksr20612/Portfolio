@@ -5,16 +5,16 @@ import { twMerge } from 'tailwind-merge';
 const getVariantClass = (variant: ButtonProps['variant']) => {
   switch (variant) {
     case 'primary': {
-      return 'bg-primary-500';
+      return 'bg-primary-500 text-mono-100';
     }
     case 'secondary': {
-      return 'bg-mono-700';
+      return 'bg-mono-700 text-mono-100';
     }
     case 'tertiary': {
-      return 'bg-mono-50 border-2 border-current text-primary-500 hover:bg-mono-200 hover:opacity-100';
+      return 'bg-mono-100 border-2 border-current text-primary-500 hover:bg-mono-200 hover:opacity-100';
     }
     case 'danger': {
-      return 'bg-danger-500';
+      return 'bg-danger-500 text-mono-100';
     }
     case 'ghost': {
       return 'text-primary-500';
