@@ -2,7 +2,7 @@
 
 import { RecoilRoot } from 'recoil';
 import React, { ReactElement } from 'react';
-import { PropsWithChildren } from '@/types/PropsWithChildren';
+import { PropsWithChildren } from 'types/PropsWithChildren';
 
 interface RecoilProps {}
 
