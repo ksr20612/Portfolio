@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Noto_Sans_KR, Roboto } from 'next/font/google';
-import Recoil from '@/components/Recoil';
+import Recoil from 'components/Recoil';
 
 const notoSans = Noto_Sans_KR({ subsets: ['latin'], variable: '--font-noto-sans' });
 const roboto = Roboto({
