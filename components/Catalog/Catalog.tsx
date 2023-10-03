@@ -91,4 +91,4 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
   );
 }
 
-export default Catalog;
+export default React.memo(Catalog);

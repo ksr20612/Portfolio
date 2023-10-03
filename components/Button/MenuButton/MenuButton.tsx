@@ -63,4 +63,4 @@ function Hamburger({ className = '' }: HamburgerProps): ReactElement {
   );
 }
 
-export default Hamburger;
+export default React.memo(Hamburger);
