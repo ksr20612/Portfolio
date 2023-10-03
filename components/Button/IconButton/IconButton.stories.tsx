@@ -20,7 +20,7 @@ type Story = StoryObj<typeof IconButton>;
 export const Description: Story = {
   render: () => (
     <IconButton aria-label="상세 보기">
-      <DescriptionOutlinedIcon fontSize="large" />
+      <DescriptionOutlinedIcon fontSize="large" id="description_icon" />
     </IconButton>
   ),
 };
@@ -28,7 +28,7 @@ export const Description: Story = {
 export const ArrowUp: Story = {
   render: () => (
     <IconButton aria-label="맨 위로">
-      <ArrowCircleUpOutlinedIcon fontSize="large" />
+      <ArrowCircleUpOutlinedIcon fontSize="large" id="arrowUp_icon" />
     </IconButton>
   ),
 };
