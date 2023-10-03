@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         noto: ['var(--font-noto-sans)'],
         roboto: ['var(--font-roboto)'],
+        ubuntu: ['var(--font-ubuntu)'],
       },
       colors: {
         primary: {
@@ -67,6 +68,12 @@ const config: Config = {
           900: '#212529',
           1000: '#000',
         },
+      },
+      filter: ['hover', 'focus'],
+      screens: {
+        mobile: '375px',
+        tablet: '768px',
+        desktop: '1024px',
       },
     },
   },
