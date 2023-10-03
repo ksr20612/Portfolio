@@ -20,6 +20,7 @@ const config: Config = {
         noto: ['var(--font-noto-sans)'],
         roboto: ['var(--font-roboto)'],
         ubuntu: ['var(--font-ubuntu)'],
+        mont: ['var(--font-mont)'],
       },
       colors: {
         primary: {

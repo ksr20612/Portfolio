@@ -5,11 +5,9 @@ import Hamburger from 'components/Button/MenuButton/MenuButton';
 import Catalog from 'components/Catalog/Catalog';
 import { useRecoilState } from 'recoil';
 import catalogOnState from 'stores/catalogOnState';
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-const Logo = '/assets/images/common/header_logo.svg';
-
-export default function Header() {
+function Header() {
   const [isOn, setIsOn] = useRecoilState(catalogOnState);
   const ref = useRef<any>(null);
 
@@ -32,8 +30,13 @@ export default function Header() {
         }}>
         <div
           className={`relative w-full flex justify-between items-center px-[3%] max-tablet:px-[48px] py-[16px] z-50 text-mono-100`}>
-          <Link href="/" className="italic max-tablet:text-[1.4rem]" id="Logo">
-            Yu Dong Yeon
+          <Link href="/" className="font-black text-[1.8rem] max-tablet:text-[1.4rem]" id="Logo">
+            {/* <h1
+              aria-label="Dong Yeon Yu's Porfolio"
+              className="bg-clip-text text-transparent bg-gradient-to-r from-secondary-300 to-primary-500">
+              Dong Yeon
+            </h1> */}
+            <h1 aria-label="Dong Yeon Yu's Porfolio">Dong Yeon</h1>
           </Link>
           <div className="flex items-center gap-[24px] font-ubuntu max-tablet:hidden">
             <Link href="#intro">Intro</Link>
@@ -51,3 +54,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default React.memo(Header);
