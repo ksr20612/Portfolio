@@ -1,13 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Noto_Sans_KR, Roboto } from 'next/font/google';
+import { Noto_Sans_KR, Roboto, Ubuntu } from 'next/font/google';
 import Recoil from 'components/Recoil';
+import Header from 'components/Header/Header';
 
 const notoSans = Noto_Sans_KR({ subsets: ['latin'], variable: '--font-noto-sans' });
 const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
   weight: ['100', '300', '400', '500', '700', '900'],
+});
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  variable: '--font-ubuntu',
+  weight: ['300', '400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -39,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body
-        className={`${notoSans.variable} font-noto ${roboto.variable} roboto w-full flex flex-col items-center bg-background-main overflow-y-auto overflow-x-hidden selection:bg-primary-500 selection:text-white`}>
+        className={`${notoSans.variable} font-noto ${roboto.variable} roboto ${ubuntu.variable} ubuntu w-full flex flex-col items-center bg-background-main overflow-y-auto overflow-x-hidden selection:bg-primary-500 selection:text-white`}>
         <Recoil>
           <div>
             <a
@@ -48,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               본문 바로가기
             </a>
           </div>
+          <Header />
           <main id="main" className="font-noto w-full">
             {children}
           </main>
