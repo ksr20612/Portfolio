@@ -1,6 +1,14 @@
-# Design Systems For Personal Projects
+<p align="center">
+  <a href="https://github.com/ksr20612/Portfolio">
+    <img src="" alt="dongYeon" width="100" height="100">
+  </a>
+  <h1 align="center">DongYeon Yu</h1>
+</p>
 
-## with using StoryBook and Bit
+<p align='center'>
+  Next.js + React + Typescript + Vercel
+</p>
 
-[👉 Storybook](https://storybook.js.org/)
-[👉 Bit](https://bit.dev/)
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
