@@ -10,8 +10,15 @@ function Intro({}: IntroProps): ReactElement {
   return (
     <Section id="#intro" className="mt-[100px]">
       <Title className="mb-[20px]">Intro</Title>
-      <div className="flex items-center max-tablet:flex-col gap-[20px]">
-        <Image src={IntroImage} alt="intro-image" width={150} height={150} sizes={'150px'} />
+      <div className="flex items-center max-tablet:flex-col gap-[20px] min-h-[200px]">
+        <Image
+          src={IntroImage}
+          alt="intro-image"
+          width={150}
+          height={150}
+          sizes={'150px'}
+          priority
+        />
         <p className="text-mono-900 text-[1.1rem] font-noto leading-[1.75]">
           <strong className="text-[1.5rem] leading-[1.6rem]">개발하는 유동연입니다.</strong>
           <br />
