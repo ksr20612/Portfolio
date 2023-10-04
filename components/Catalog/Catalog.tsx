@@ -40,7 +40,7 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
           <li className="mb-[20px]">
             <Link
               href="#experience"
-              className="text-[1.2rem] max-mobile:text-[1.8rem]"
+              className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
               Work Experience
             </Link>
@@ -56,7 +56,7 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
           <li className="mb-[20px]">
             <Link
               href="#skills"
-              className="text-[1.2rem] max-mobile:text-[1.8rem]"
+              className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
               Skills
             </Link>
@@ -64,7 +64,7 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
           <li className="mb-[20px]">
             <Link
               href="#certificates"
-              className="text-[1.2rem] max-mobile:text-[1.8rem]"
+              className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
               Certificates
             </Link>
@@ -72,7 +72,7 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
           <li className="mb-[20px]">
             <Link
               href="#blogs"
-              className="text-[1.2rem] max-mobile:text-[1.8rem]"
+              className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
               Blogs
             </Link>
@@ -80,7 +80,7 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
           <li className="mb-[20px]">
             <Link
               href="#contact"
-              className="text-[1.2rem] max-mobile:text-[1.8rem]"
+              className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
               Contact
             </Link>

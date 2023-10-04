@@ -1,8 +1,8 @@
 import { composeStories } from '@storybook/testing-react';
 import { render } from '@testing-library/react';
-import * as Stories from './IconButton.stories';
+import * as stories from './IconButton.stories';
 
-const { Description } = composeStories(Stories);
+const { Description } = composeStories(stories);
 
 describe('<IconButton>', () => {
   const { container } = render(<Description />);

@@ -6,7 +6,6 @@ const meta = {
   title: 'Header/Header',
   component: Header,
   parameters: {
-    layout: 'centered',
     componentSubtitle: '기본적인 헤더입니다.',
   },
   tags: ['autodocs'],
