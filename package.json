@@ -10,7 +10,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "chromatic": "npx chromatic --project-token=chpt_60699ff0bd5a78a"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -53,6 +54,7 @@
     "@types/recoil": "^0.0.9",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
+    "chromatic": "^7.2.0",
     "eslint": "^8.49.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
@@ -70,5 +72,7 @@
     "prettier": "^3.0.3",
     "storybook": "^7.4.5",
     "typescript": "5.2.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "Portfolio@0.1.0"
 }
