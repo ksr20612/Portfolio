@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div>
             <a
               href="#main"
-              className="absolute -top-[999px] -left-[999px] w-full text-center py-[10px] px-0 overflow-hidden bg-primary-500 text-white text-[2.0rem] font-bold focus:top-0 focus:left-0 focus:z-[999]">
+              className="absolute top-0 right-full w-full text-center py-[10px] px-0 overflow-hidden bg-primary-500 text-white text-[2.0rem] font-bold focus:left-0 focus:z-[999]">
               본문 바로가기
             </a>
           </div>

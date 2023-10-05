@@ -9,7 +9,9 @@ interface IntroProps {}
 function Intro({}: IntroProps): ReactElement {
   return (
     <Section id="#intro" className="mt-[100px]">
-      <Title className="mb-[20px]">Intro</Title>
+      <Title className="mb-[20px]" lang="en">
+        Intro
+      </Title>
       <div className="flex items-center max-tablet:flex-col gap-[20px] min-h-[200px]">
         <Image
           src={IntroImage}
