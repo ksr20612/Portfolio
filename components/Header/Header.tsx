@@ -18,7 +18,7 @@ function Header() {
   }, [isOn]);
 
   return (
-    <header className={`fixed flex justify-center left-0 z-50 w-full bg-mono-700`}>
+    <header className={`fixed flex justify-center left-0 z-50 w-full bg-mono-700`} lang="en">
       <div
         className="fixed flex justify-center left-0 z-50 w-full bg-inherit"
         tabIndex={0}
