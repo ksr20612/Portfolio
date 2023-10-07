@@ -16,13 +16,13 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb)); */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
+  color: rgb(var(--foreground-rgb));
   font-size: calc(1rem + 1vw);
 }
 

@@ -13,7 +13,7 @@ interface SkillProps {}
 
 function Skill({}: SkillProps): ReactElement {
   return (
-    <Section colored>
+    <Section id="skills" colored>
       <Title className="mb-[20px]" lang="en">
         Skills
       </Title>
@@ -53,6 +53,9 @@ function Skill({}: SkillProps): ReactElement {
         </li>
         <li>
           <SmallBadge>Jest</SmallBadge>
+        </li>
+        <li>
+          <SmallBadge>Storybook</SmallBadge>
         </li>
         <li>
           <SmallBadge>PlayWright</SmallBadge>
