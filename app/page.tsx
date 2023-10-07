@@ -1,11 +1,12 @@
 import Contact from 'components/Pages/Contact/Contact';
-import Intro from 'components/Pages/Intro/Intro';
+import About from 'components/Pages/About/About';
+import Skills from 'components/Pages/Skills/Skills';
 
 export default function Home() {
   return (
     <>
-      <Intro />
-
+      <About />
+      <Skills />
       <Contact />
     </>
   );

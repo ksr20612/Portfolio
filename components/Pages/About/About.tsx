@@ -5,13 +5,13 @@ import React, { ReactElement } from 'react';
 import IntroImage from 'public/dongyeon.png';
 import Link from 'components/Link/Link';
 
-interface IntroProps {}
+interface AboutProps {}
 
-function Intro({}: IntroProps): ReactElement {
+function About({}: AboutProps): ReactElement {
   return (
-    <Section id="#intro" className="mt-[100px]">
+    <Section id="#about" className="mt-[100px]">
       <Title className="mb-[20px]" lang="en">
-        Intro
+        About
       </Title>
       <div className="flex items-center max-tablet:flex-col gap-[20px] min-h-[200px]">
         <Image
@@ -42,4 +42,4 @@ function Intro({}: IntroProps): ReactElement {
   );
 }
 
-export default Intro;
+export default About;

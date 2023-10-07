@@ -18,7 +18,7 @@ function Header() {
   }, [isOn]);
 
   return (
-    <header className={`fixed flex justify-center left-0 z-50 w-full bg-primary-600`} lang="en">
+    <header className={`sticky flex justify-center left-0 z-50 w-full bg-primary-600`} lang="en">
       <div
         className="fixed flex justify-center left-0 z-50 w-full bg-inherit"
         tabIndex={0}
@@ -34,11 +34,10 @@ function Header() {
             <h1 aria-label="Dong Yeon Yu's Porfolio">Dong Yeon</h1>
           </Link>
           <div className="flex items-center gap-[24px] font-ubuntu max-tablet:hidden">
-            <Link href="#intro">Intro</Link>
+            <Link href="#about">About</Link>
             <Link href="#experience">Work Experience</Link>
             <Link href="#projects">Projects</Link>
             <Link href="#skills">Skills</Link>
-            <Link href="#certificates">Certificates</Link>
             <Link href="#blogs">Blogs</Link>
             <Link href="#contact">Contact</Link>
           </div>

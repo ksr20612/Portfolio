@@ -34,7 +34,7 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
               href="#intro"
               className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
-              Intro
+              About
             </Link>
           </li>
           <li className="mb-[20px]">
@@ -59,14 +59,6 @@ function Catalog({ className = '' }: CatalogProps): ReactElement {
               className="text-[1.2rem] max-mobile:text-[1.2rem]"
               onClick={onClick}>
               Skills
-            </Link>
-          </li>
-          <li className="mb-[20px]">
-            <Link
-              href="#certificates"
-              className="text-[1.2rem] max-mobile:text-[1.2rem]"
-              onClick={onClick}>
-              Certificates
             </Link>
           </li>
           <li className="mb-[20px]">
