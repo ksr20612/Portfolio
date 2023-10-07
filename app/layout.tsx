@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body
-        className={`${notoSans.variable} font-noto ${roboto.variable} font-roboto ${ubuntu.variable} font-ubuntu ${montserrat} font-mont w-full flex flex-col items-center bg-background-main overflow-y-auto overflow-x-hidden selection:bg-primary-500 selection:text-white`}>
+        className={`${notoSans.variable} font-noto ${roboto.variable} font-roboto ${ubuntu.variable} font-ubuntu ${montserrat} font-mont w-full flex flex-col items-center bg-background-main overflow-y-auto overflow-x-hidden selection:bg-primary-500 selection:text-white m-auto `}>
         <Recoil>
           <div>
             <a
