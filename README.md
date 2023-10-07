@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/ksr20612/Portfolio">
+  <a href="https://naive-ethan-portfolio.vercel.app" target="_blank">
     <img src="https://naive-ethan-portfolio.vercel.app/dongyeon.png" alt="dongYeon picture" width="auto" height="auto">
   </a>
   <h1 align="center">DongYeon Yu Portfolio</h1>
