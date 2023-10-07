@@ -4,9 +4,10 @@
   </a>
   <h1 align="center">DongYeon Yu Portfolio</h1>
 </p>
-
+<br/>
 <p align='center'>
-  Next.js + React + Typescript + Vercel
+  Next.js + React + Typescript + Vercel <br/> <br/>
+  <em>Recoil - Storybook - TailwindCss - Jest</em>
 </p>
 
 <br/>
