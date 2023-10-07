@@ -4,18 +4,18 @@ import { Noto_Sans_KR, Roboto, Ubuntu, Montserrat } from 'next/font/google';
 import Recoil from 'components/Recoil';
 import Header from 'components/Header/Header';
 
-const notoSans = Noto_Sans_KR({ subsets: ['latin'], variable: '--font-noto-sans' });
-const roboto = Roboto({
+export const notoSans = Noto_Sans_KR({ subsets: ['latin'], variable: '--font-noto-sans' });
+export const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
   weight: ['100', '300', '400', '500', '700', '900'],
 });
-const ubuntu = Ubuntu({
+export const ubuntu = Ubuntu({
   subsets: ['latin'],
   variable: '--font-ubuntu',
   weight: ['300', '400', '500', '700'],
 });
-const montserrat = Montserrat({
+export const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-mont',
 });

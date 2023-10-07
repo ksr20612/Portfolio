@@ -3,6 +3,7 @@ import Title from 'components/Title/Title';
 import Image from 'next/image';
 import React, { ReactElement } from 'react';
 import IntroImage from 'public/dongyeon.png';
+import Link from 'components/Link/Link';
 
 interface IntroProps {}
 
@@ -26,7 +27,11 @@ function Intro({}: IntroProps): ReactElement {
           <br />
           4년차 개발자로 React와 Typescript 진영에서 서비스를 설계, 배포, 운영해오고 있습니다.
           <br />
-          지금은 [RockieTalkie] 의 프론트엔드를 리딩하고 있습니다.
+          지금은{' '}
+          <Link href="https://www.rockie-talkie.com" className="hover:underline" target="_blank">
+            RockieTalkie
+          </Link>{' '}
+          의 프론트엔드를 리딩하고 있습니다.
           <br /> <br />
           프론트엔드 개발자로서는 더 많은 사용자를 배려하는 인클루시브한 디자인과 코드를 지향합니다.
           <br />

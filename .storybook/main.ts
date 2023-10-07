@@ -24,6 +24,12 @@ const config: StorybookConfig = {
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
+    if (config && config.resolve) {
+      config.resolve.alias = {
+        ...config.resolve?.alias,
+        '@next/font/google': require.resolve('./nextFontGoogle'),
+      };
+    }
     return config;
   },
 };
