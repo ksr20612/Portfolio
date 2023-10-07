@@ -37,3 +37,25 @@ body {
     display: none;
   }
 }
+
+/* swiper */
+:root {
+  --swiper-pagination-bottom: 0px;
+  --swiper-theme-color: #15749d !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 20 !important;
+}
+.swiper-slide {
+  margin: 0 auto;
+}
+.swiper-slide img {
+  display: unset;
+}
+/* .swiper-pagination {
+  transform: translateY(40px) !important;
+} */
+.swiper {
+  overflow: unset !important;
+}
