@@ -74,3 +74,18 @@ body {
   white-space: nowrap;
   text-indent: 1em;
 }
+
+/* mailto links */
+[href^='mail']::after {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('https://www.svgrepo.com/show/511057/mail.svg');
+  background-repeat: no-repeat;
+  background-position: top 2.5px center;
+  background-size: 100% auto;
+  content: '(메일 보내기)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em;
+}
