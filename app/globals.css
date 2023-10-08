@@ -22,8 +22,8 @@ html {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   font-size: calc(1rem + 1vw);
+  word-break: keep-all;
 }
 
 * {
@@ -58,4 +58,19 @@ body {
 } */
 .swiper {
   overflow: unset !important;
+}
+
+/* external links */
+[href^='http']:not([href*='naive-ethan-portfolio.vercel.app'])::after {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('https://www.svgrepo.com/show/510970/external-link.svg');
+  background-repeat: no-repeat;
+  background-position: top 2px center;
+  background-size: 100% auto;
+  content: '(외부 링크)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em;
 }
