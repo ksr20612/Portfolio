@@ -9,7 +9,7 @@ interface BlogsProps {}
 
 function Blogs({}: BlogsProps): ReactElement {
   return (
-    <Section>
+    <Section id="blogs">
       <Title className="mb-[20px]" lang="en">
         Blogs
       </Title>

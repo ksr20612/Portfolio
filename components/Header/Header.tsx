@@ -38,12 +38,36 @@ function Header() {
             Dong Yeon
           </Link>
           <nav className="flex items-center gap-[24px] font-ubuntu max-tablet:hidden">
-            <Link href="#about">About</Link>
-            <Link href="#experience">Work Experience</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#skills">Skills</Link>
-            <Link href="#blogs">Blogs</Link>
-            <Link href="#contact">Contact</Link>
+            <Link
+              href="#about"
+              className="hover:text-danger-100 transition-color ease-in-out duration-300">
+              About
+            </Link>
+            <Link
+              href="#experience"
+              className="hover:text-danger-100 transition-color ease-in-out duration-300">
+              Work Experience
+            </Link>
+            <Link
+              href="#projects"
+              className="hover:text-danger-100 transition-color ease-in-out duration-300">
+              Projects
+            </Link>
+            <Link
+              href="#skills"
+              className="hover:text-danger-100 transition-color ease-in-out duration-300">
+              Skills
+            </Link>
+            <Link
+              href="#blogs"
+              className="hover:text-danger-100 transition-color ease-in-out duration-300">
+              Blogs
+            </Link>
+            <Link
+              href="#contact"
+              className="hover:text-danger-100 transition-color ease-in-out duration-300">
+              Contact
+            </Link>
           </nav>
           <Hamburger className="hidden max-tablet:inline-block" />
         </div>
