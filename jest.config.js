@@ -10,7 +10,7 @@ const customJestConfig = {
   moduleNameMapper: {
     '^@/app/(.*)$': '<rootDir>/app/$1',
     '^@/pages/(.*)$': '<rootDir>/pages/$1',
-    '\\.svg$': '<rootDir>/__mocks__/svg.js',
+    '\\.(svg)$': '<rootDir>/__mocks__/svg.js',
   },
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',

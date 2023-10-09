@@ -35,7 +35,9 @@ export const RightIcon: Story = {
   render: () => (
     <ActionButton
       onClick={sampleOnClick}
-      leftIcon={<EnterIcon width="0.9em" height="0.9em" className="text-current stroke-current" />}>
+      rightIcon={
+        <EnterIcon width="0.9em" height="0.9em" className="text-current stroke-current" />
+      }>
       이동하기
     </ActionButton>
   ),
