@@ -4,7 +4,7 @@ import { EventObject } from 'types/Event';
 import Modal from './Modal';
 
 const meta = {
-  title: 'Modal/Modal',
+  title: 'Modals/Modal',
   component: Modal,
   parameters: {
     layout: 'centered',
