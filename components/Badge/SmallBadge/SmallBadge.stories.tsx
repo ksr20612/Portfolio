@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Badge from './SmallBadge';
 
 const meta = {
-  title: 'Badge/SmallBadge',
+  title: 'Badges/SmallBadge',
   component: Badge,
   parameters: {
     componentSubtitle: '짧은 단어로 구성된 작은 배지',

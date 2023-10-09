@@ -60,6 +60,16 @@ body {
   overflow: unset !important;
 }
 
+/* visually-hidden: 스크린리더는 읽지만, 화면에서는 보이지 않음 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
 /* external links */
 [href^='http']:not([href*='naive-ethan-portfolio.vercel.app'])::after {
   display: inline-block;
