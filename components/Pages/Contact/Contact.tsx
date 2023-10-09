@@ -2,6 +2,9 @@ import Section from 'components/Section/Section';
 import Title from 'components/Title/Title';
 import React, { ReactElement } from 'react';
 import Link from 'components/Link/Link';
+import GithubIcon from 'public/icons/github.svg';
+import LinkedInIcon from 'public/icons/linkedin.svg';
+import GoogleIcon from 'public/icons/google.svg';
 
 interface ContactProps {}
 
@@ -17,13 +20,25 @@ function Contact({}: ContactProps): ReactElement {
         </h3>
         <div className="text-[1.2rem]">
           <ul>
-            <li>
+            <li className="flex gap-2 items-center">
+              <GithubIcon />
               Github |{' '}
               <Link href="https://github.com/ksr20612" target="_blank" className="hover:underline">
                 github.com/ksr20612
               </Link>
             </li>
-            <li>
+            <li className="flex gap-2 items-center">
+              <LinkedInIcon />
+              LinkedIn |{' '}
+              <Link
+                href="https://www.linkedin.com/in/dongyeon-yu-06ab6827b/"
+                target="_blank"
+                className="hover:underline">
+                linkedin.com/dongyeon-yu
+              </Link>
+            </li>
+            <li className="flex gap-2 items-center">
+              <GoogleIcon />
               Email |{' '}
               <Link href="mailto:ksr20612@gmail.com" className="hover:underline">
                 ksr20612@gmail.com
