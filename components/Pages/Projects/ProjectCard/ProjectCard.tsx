@@ -6,6 +6,8 @@ import { twMerge } from 'tailwind-merge';
 import CompanyIcon from 'public/icons/company.svg';
 import PersonalIcon from 'public/icons/einstein.svg';
 import useEnsureMounted from 'hooks/useEnsureMounted';
+import Card from 'components/Card/Card';
+import mainImg from 'public/projects/rockie_landing/rockie_main.png';
 
 interface ProjectCardProps {}
 
@@ -60,8 +62,13 @@ function ProjectCard({}: ProjectCardProps) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2, staggerChildren: 0.05 }}
-              className="flex flex-wrap gap-5 py-5"
-            />
+              className="flex flex-wrap gap-5 py-5">
+              <Card
+                image={mainImg}
+                title="RockieTalkie 온보딩"
+                contents={<div>RockieTalkie 온보딩 내용</div>}
+              />
+            </motion.div>
           )}
           {selected === 1 && (
             <motion.div
