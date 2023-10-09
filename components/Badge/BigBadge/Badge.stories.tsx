@@ -4,7 +4,7 @@ import NextIcon from 'public/icons/skills/nextjs.svg';
 import Badge from './BigBadge';
 
 const meta = {
-  title: 'Badge/BigBadge',
+  title: 'Badges/BigBadge',
   component: Badge,
   parameters: {
     componentSubtitle: '<SVG>와 짧은 설명으로 구성된 큰 배지',

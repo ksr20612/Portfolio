@@ -7,7 +7,7 @@ interface ContactProps {}
 
 function Contact({}: ContactProps): ReactElement {
   return (
-    <Section id="contact">
+    <Section id="contact" colored>
       <Title className="mb-[20px]" lang="en">
         Contact
       </Title>

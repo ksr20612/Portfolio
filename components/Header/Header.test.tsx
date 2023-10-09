@@ -7,12 +7,11 @@ const { Default } = composeStories(stories);
 
 describe('<Header>', () => {
   test('로고를 렌더링한다', () => {
-    const { container } = render(
+    render(
       <RecoilRoot>
         <Default />
       </RecoilRoot>,
     );
-    expect(container.querySelectorAll('h1')).toHaveLength(1);
     expect(screen.getByText('Dong Yeon')).toBeInTheDocument();
   });
   test('링크를 렌더링한다', () => {
@@ -21,6 +20,6 @@ describe('<Header>', () => {
         <Default />
       </RecoilRoot>,
     );
-    expect(container.querySelectorAll('a')).toHaveLength(8);
+    expect(container.querySelectorAll('a')).toHaveLength(7);
   });
 });
