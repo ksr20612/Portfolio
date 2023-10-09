@@ -14,7 +14,7 @@
 <br/>
 
 <p align='center'>
-  Check out Stories at
+  Check out my Stories at
 </p>
 
 <p align='center'>
