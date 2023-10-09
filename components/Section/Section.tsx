@@ -16,7 +16,7 @@ function Section({
   return (
     <section
       className={twMerge(
-        'w-full my-[50px] px-10 py-[50px] m-auto',
+        'w-full min-h-[300px] my-[50px] px-10 py-[50px] m-auto',
         colored ? 'bg-mono-200' : 'transparent',
         className,
       )}
